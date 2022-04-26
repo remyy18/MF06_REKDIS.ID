@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-class AkunPage extends StatefulWidget {
+class RekamMedis extends StatefulWidget {
   @override
-  _AkunPageState createState() => new _AkunPageState();
+  _RekamMedisState createState() => new _RekamMedisState();
 }
 
-class _AkunPageState extends State<AkunPage> {
+class _RekamMedisState extends State<RekamMedis> {
   @override
   void initState() {
     super.initState();
@@ -15,11 +15,11 @@ class _AkunPageState extends State<AkunPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Akun'),
+        title: Text('Rekam Medis'),
       ),
       body: Center(
         child: Text(
-          'Akun',
+          'Rekam Medis',
         ),
       ),
     );

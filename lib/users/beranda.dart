@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-class AkunPage extends StatefulWidget {
+class Beranda extends StatefulWidget {
   @override
-  _AkunPageState createState() => new _AkunPageState();
+  _BerandaState createState() => new _BerandaState();
 }
 
-class _AkunPageState extends State<AkunPage> {
+class _BerandaState extends State<Beranda> {
   @override
   void initState() {
     super.initState();
@@ -15,11 +15,11 @@ class _AkunPageState extends State<AkunPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Akun'),
+        title: Text('Beranda'),
       ),
       body: Center(
         child: Text(
-          'Akun',
+          'Beranda',
         ),
       ),
     );
