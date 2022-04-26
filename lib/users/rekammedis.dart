@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:rekdis/models/user.dart';
 import 'package:flutter_slidable/flutter_slidable.dart';
+import 'package:rekdis/users/signup.dart';
 
 class RekamMedis extends StatefulWidget {
   const RekamMedis({Key? key}) : super(key: key);
@@ -188,31 +189,25 @@ class _RekamMedisState extends State<RekamMedis> {
             ])
           ]),
           GestureDetector(
-            onTap: () {
-              setState(() {
-                user.isFollowedByMe = !user.isFollowedByMe;
-              });
-            },
+            onTap: () => Navigator.of(context).push(
+              MaterialPageRoute(
+                builder: (context) => SignUp(),
+              ),
+            ),
             child: AnimatedContainer(
                 height: 35,
                 width: 110,
                 duration: Duration(milliseconds: 300),
                 decoration: BoxDecoration(
-                    color: user.isFollowedByMe
-                        ? Colors.blue[700]
-                        : Color(0xffffff),
+                    color: Color(0xffffff),
                     borderRadius: BorderRadius.circular(5),
                     border: Border.all(
-                      color: user.isFollowedByMe
-                          ? Colors.transparent
-                          : Colors.grey.shade700,
+                      color: Colors.grey.shade700,
                     )),
                 child: Center(
-                    child: Text(user.isFollowedByMe ? 'Unfollow' : 'Lihat',
-                        style: TextStyle(
-                            color: user.isFollowedByMe
-                                ? Color.fromARGB(255, 0, 0, 0)
-                                : Color.fromARGB(255, 7, 7, 7))))),
+                    child: Text('Lihat',
+                        style:
+                            TextStyle(color: Color.fromARGB(255, 0, 0, 0))))),
           )
         ],
       ),
