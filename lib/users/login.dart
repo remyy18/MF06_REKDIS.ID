@@ -36,6 +36,7 @@ class LoginScreen extends StatelessWidget {
                 ),
               ),
             ),
+            const SizedBox(height: 8.0),
             const CupertinoTextField(
               obscureText: true,
               prefix: Icon(Icons.lock, color: Colors.blue),
@@ -56,6 +57,7 @@ class LoginScreen extends StatelessWidget {
                 ),
               ),
             ),
+            const SizedBox(height: 8.0),
             Row(
               children: [
                 Spacer(),
