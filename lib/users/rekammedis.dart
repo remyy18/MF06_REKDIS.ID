@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:rekdis/models/user.dart';
 import 'package:flutter_slidable/flutter_slidable.dart';
-import 'package:rekdis/users/signup.dart';
+import 'package:rekdis/users/lihatdata.dart';
 
 class RekamMedis extends StatefulWidget {
   const RekamMedis({Key? key}) : super(key: key);
@@ -191,7 +191,7 @@ class _RekamMedisState extends State<RekamMedis> {
           GestureDetector(
             onTap: () => Navigator.of(context).push(
               MaterialPageRoute(
-                builder: (context) => SignUp(),
+                builder: (context) => LihatData(),
               ),
             ),
             child: AnimatedContainer(
