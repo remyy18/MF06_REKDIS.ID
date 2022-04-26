@@ -14,9 +14,6 @@ class _RekamMedisState extends State<RekamMedis> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Rekam Medis'),
-      ),
       body: Center(
         child: Text(
           'Rekam Medis',

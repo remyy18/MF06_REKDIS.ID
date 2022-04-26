@@ -14,9 +14,6 @@ class _BerandaState extends State<Beranda> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Beranda'),
-      ),
       body: Center(
         child: Text(
           'Beranda',

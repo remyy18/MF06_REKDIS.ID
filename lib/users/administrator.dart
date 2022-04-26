@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:rekdis/users/landing.dart';
 
 class Administrator extends StatelessWidget {
   @override
@@ -69,7 +70,11 @@ class Administrator extends StatelessWidget {
             ),
             const SizedBox(height: 16.0),
             TextButton(
-              onPressed: () {},
+              onPressed: () => Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (context) => LandingPage(),
+                ),
+              ),
               child: const Text('Login'),
               style: TextButton.styleFrom(
                 backgroundColor: Colors.blue,
