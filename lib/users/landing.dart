@@ -49,7 +49,7 @@ class _LandingPageState extends State<LandingPage> {
                 Icons.favorite,
                 color: Colors.grey,
               ),
-              label: 'ReDis'),
+              label: 'Rekdis'),
           BottomNavigationBarItem(
               activeIcon: new Icon(
                 Icons.person,
