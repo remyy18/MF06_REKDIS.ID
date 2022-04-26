@@ -26,7 +26,7 @@ class AkunPage extends StatelessWidget {
                   child: CircleAvatar(
                     radius: 75,
                     backgroundImage: NetworkImage(
-                        'https://scontent.ftun7-1.fna.fbcdn.net/v/t39.30808-6/s552x414/255729438_2061962933967301_6536194202848894171_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=8WN5tCaKhNQAX8wbDdB&_nc_ht=scontent.ftun7-1.fna&oh=00_AT-vQcebr_3_dyt5y7xkSu5mO6tTdZSL7pr80y15zU8aOQ&oe=61CD0B9D'),
+                        'https://images.unsplash.com/photo-1561742026-e99d88acc2e9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80'),
                   ),
                 ))
           ]),
@@ -34,7 +34,7 @@ class AkunPage extends StatelessWidget {
         height: 45,
       ),
       ListTile(
-        title: Center(child: Text('Riza Dianil Iman S.T., M.Eng')),
+        title: Center(child: Text('Dewi Ayu Amd.Kes')),
         subtitle: Center(child: Text('Bidan')),
       ),
       ListTile(
