@@ -17,8 +17,45 @@ class LoginScreen extends StatelessWidget {
               ),
             ),
             Expanded(child: Image.asset('assets/images/login.png')),
-            const CupertinoTextField(),
-            const CupertinoTextField(),
+            const CupertinoTextField(
+              prefix: Icon(Icons.mail_outline, color: Colors.blue),
+              suffix: Icon(
+                Icons.check_circle,
+                color: Colors.blue,
+              ),
+              padding: EdgeInsets.symmetric(
+                horizontal: 24.0,
+                vertical: 16.0,
+              ),
+              style: TextStyle(color: Colors.black),
+              decoration: BoxDecoration(
+                border: Border(
+                  bottom: BorderSide(
+                    color: Colors.blue,
+                  ),
+                ),
+              ),
+            ),
+            const CupertinoTextField(
+              obscureText: true,
+              prefix: Icon(Icons.lock, color: Colors.blue),
+              suffix: Icon(
+                Icons.visibility_off,
+                color: Colors.blue,
+              ),
+              padding: EdgeInsets.symmetric(
+                horizontal: 24.0,
+                vertical: 16.0,
+              ),
+              style: TextStyle(color: Colors.black),
+              decoration: BoxDecoration(
+                border: Border(
+                  bottom: BorderSide(
+                    color: Colors.blue,
+                  ),
+                ),
+              ),
+            ),
             Row(
               children: [
                 Spacer(),
