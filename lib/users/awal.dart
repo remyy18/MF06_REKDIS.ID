@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:rekdis/users/login.dart';
 import 'package:rekdis/users/signup.dart';
+import 'package:rekdis/users/administrator.dart';
 
 class Awal extends StatelessWidget {
   @override
@@ -77,7 +78,11 @@ class Awal extends StatelessWidget {
                     mainAxisSize: MainAxisSize.min,
                     children: [
                       TextButton(
-                        onPressed: () {},
+                        onPressed: () => Navigator.of(context).push(
+                          MaterialPageRoute(
+                            builder: (context) => Administrator(),
+                          ),
+                        ),
                         child: const Text('Administrator'),
                         style: TextButton.styleFrom(
                           backgroundColor: Colors.green,
