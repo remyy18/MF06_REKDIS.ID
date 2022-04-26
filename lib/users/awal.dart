@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:rekdis/users/login.dart';
+import 'package:rekdis/users/signup.dart';
 
 class Awal extends StatelessWidget {
   @override
@@ -53,7 +54,11 @@ class Awal extends StatelessWidget {
                         width: 8.0,
                       ),
                       OutlinedButton(
-                        onPressed: () {},
+                        onPressed: () => Navigator.of(context).push(
+                          MaterialPageRoute(
+                            builder: (context) => SignUp(),
+                          ),
+                        ),
                         child: const Text('Sign Up'),
                         style: TextButton.styleFrom(
                           primary: Colors.black,
