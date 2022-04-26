@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:rekdis/users/awal.dart' as users;
+import 'package:rekdis/users/landing.dart' as users;
 import 'dart:async';
-import './landing.dart';
 
 class LauncherPage extends StatefulWidget {
   @override
@@ -16,10 +17,10 @@ class _LauncherPageState extends State<LauncherPage> {
   }
 
   startLaunching() async {
-    var duration = const Duration(seconds: 10);
+    var duration = const Duration(seconds: 5);
     return new Timer(duration, () {
       Navigator.of(context).pushReplacement(new MaterialPageRoute(builder: (_) {
-        return new LandingPage();
+        return new users.Awal();
       }));
     });
   }
@@ -47,7 +48,7 @@ class _LauncherPageState extends State<LauncherPage> {
                 end: Alignment.bottomCenter,
                 colors: [
                   Color.fromARGB(255, 72, 251, 111),
-                  Color.fromARGB(255, 46, 247, 43)
+                  Color.fromARGB(255, 13, 174, 10)
                 ])),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
@@ -55,7 +56,7 @@ class _LauncherPageState extends State<LauncherPage> {
           children: <Widget>[
             new Center(
               child: new Image.asset(
-                "assets/rekdis.png",
+                "assets/images/rekdis.png",
                 height: 70.0,
                 width: 200.0,
               ),
