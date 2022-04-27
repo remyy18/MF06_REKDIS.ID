@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:rekdis/users/login.dart';
+import 'package:rekdis/users/setting.dart';
 
 class AkunPage extends StatelessWidget {
   const AkunPage({Key? key, String? title}) : super(key: key);
@@ -57,7 +57,7 @@ class AkunPage extends StatelessWidget {
           OutlinedButton(
             onPressed: () => Navigator.of(context).push(
               MaterialPageRoute(
-                builder: (context) => LoginScreen(),
+                builder: (context) => Pengaturan(),
               ),
             ),
             child: const Text('Setting'),
