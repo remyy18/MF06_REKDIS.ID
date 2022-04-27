@@ -14,7 +14,7 @@ class Awal extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             Expanded(
-              child: Image.asset('assets/images/rekdis.png'),
+              child: Image.asset('assets/images/welcome.png'),
             ),
             Expanded(
               child: Column(
@@ -27,7 +27,8 @@ class Awal extends StatelessWidget {
                     padding: EdgeInsets.symmetric(horizontal: 16.0),
                     child: Text(
                       'Rekdis : Layanan Rekam Medis Puskesmas',
-                      style: TextStyle(color: Colors.grey),
+                      style:
+                          TextStyle(color: Color.fromARGB(255, 118, 118, 118)),
                       textAlign: TextAlign.center,
                     ),
                   ),
