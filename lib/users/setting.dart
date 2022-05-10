@@ -37,7 +37,7 @@ class MapScreenState extends State<Pengaturan>
                                 children: <Widget>[
                                   Padding(
                                     padding: EdgeInsets.only(left: 25.0),
-                                    child: new Text('PROFILE',
+                                    child: new Text('SETTINGS',
                                         style: TextStyle(
                                             fontWeight: FontWeight.bold,
                                             fontSize: 20.0,
